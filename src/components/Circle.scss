@@ -1,0 +1,22 @@
+$baseColor: #aca9a9;
+$checkColor: #fdc62f;
+
+.circle_container {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  justify-content: space-around;
+  width: 0.9rem;
+  height: 0.9rem;
+  background-color: $baseColor;
+  border-radius: 50%;
+
+  &.check {
+    background-color: $checkColor;
+  }
+  & + & {
+    margin-left: 4px;
+  }
+}

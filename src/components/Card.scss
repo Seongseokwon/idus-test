@@ -1,0 +1,107 @@
+.card {
+  &.vertical {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+
+    .card_content {
+      background-color: #f8f9fb;
+      padding: 5px 5px 10px;
+      border: 1px solid #e4e1e1;
+    }
+    .card_review {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5px 5px 0;
+      height: 60px;
+      background-color: #f8f9fb;
+      border: 1px solid #e4e1e1;
+      border-top: none;
+    }
+    & + & {
+      margin-left: 10px;
+    }
+  }
+
+  &.horizontal {
+    display: flex;
+    width: 35%;
+    height: 25%;
+
+    .card_content_container {
+      width: 100%;
+      border: 1px solid #e4e1e1;
+      background-color: #f8f9fb;
+    }
+    .card_content {
+      padding: 5px 5px 10px;
+    }
+    .description {
+      font-size: 0.9rem;
+      color: #666565;
+      display: -webkit-box;
+      word-wrap: break-word;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 40px;
+      margin-top: 10px;
+    }
+    .card_content .title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #464444;
+    }
+    .card_review {
+      display: flex;
+      align-self: center;
+      padding: 5px 5px 0;
+      height: 60px;
+    }
+    .writer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+      color: #5f5d5d;
+    }
+  }
+}
+
+.card img {
+  max-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.card_content .label {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  color: #afafaf;
+}
+
+.card_content .paragraph {
+  padding: 1.1rem 0 0.1rem;
+}
+.card_content .paragraph strong {
+  font-size: 14px;
+  color: #d35442;
+}
+
+.card_content .paragraph span {
+  font-size: 12px;
+  color: #b4b3b3;
+  text-decoration: line-through;
+}
+
+.review {
+  display: inline-block;
+  margin-top: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9rem;
+  color: #666565;
+}

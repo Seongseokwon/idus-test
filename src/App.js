@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import './Reset.css';
 import './App.css';
+import Card from './components/Card';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div style={{ display: 'flex' }}>
+        <Card
+          position={'vertical'}
+          star={2}
+          review={'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'}
+        />
+        <Card position={'vertical'} star={4} />
+        <Card position={'vertical'} />
+      </div>
+      <br />
+      <div>
+        <Card
+          position={'horizontal'}
+          star={3}
+          review={'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'}
+          writer={'John Doe'}
+        />
+      </div>
     </div>
   );
 }
