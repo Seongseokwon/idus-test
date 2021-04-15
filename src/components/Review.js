@@ -2,6 +2,7 @@ import React from 'react';
 import Circle from './Circle';
 
 function Review({ star, review, position, writer }) {
+  console.log(writer);
   const makeCircle = () => {
     const allCircle = [];
     let increase = 0;

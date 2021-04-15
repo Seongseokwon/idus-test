@@ -16,12 +16,7 @@ function App() {
       </div>
       <br />
       <div>
-        <Card
-          position={'horizontal'}
-          star={3}
-          review={'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'}
-          writer={'John Doe'}
-        />
+        <Card position={'horizontal'} star={3} writer={'John Doe'} />
       </div>
     </div>
   );
