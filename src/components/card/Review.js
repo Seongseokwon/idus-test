@@ -7,10 +7,10 @@ function Review({ star, review, position, writer }) {
     const allCircle = [];
     let increase = 0;
     for (increase; increase < star; increase++) {
-      allCircle.push(<Circle check={'check'} />);
+      allCircle.push(<Circle check={'check'} key={increase} />);
     }
     for (increase; increase < 5; increase++) {
-      allCircle.push(<Circle />);
+      allCircle.push(<Circle key={increase} />);
     }
     return allCircle;
   };

@@ -1,6 +1,6 @@
 import './Reset.css';
 import './App.css';
-import Card from './components/Card';
+import Card from './components/card/Card';
 
 function App() {
   return (
@@ -15,9 +15,7 @@ function App() {
         <Card position={'vertical'} />
       </div>
       <br />
-      <div>
-        <Card position={'horizontal'} star={3} writer={'John Doe'} />
-      </div>
+      <Card position={'horizontal'} star={3} writer={'John Doe'} />
     </div>
   );
 }
