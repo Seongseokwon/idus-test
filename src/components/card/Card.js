@@ -3,7 +3,6 @@ import './Card.scss';
 import Review from './Review';
 function Card(props) {
   const { star, review, position, writer } = props;
-  console.log(writer);
   return position === 'vertical' ? (
     // image 영역
     // 내용 영역
