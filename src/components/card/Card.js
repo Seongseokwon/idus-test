@@ -10,7 +10,7 @@ function Card(props) {
     // 별점, 후기영역
 
     <div className={`card ${position}`}>
-      <img src="/images/logo.png" alt="itemImage" />
+      <img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="itemImage" />
       <div className="card_content">
         <h3 className="label">Card Label</h3>
         <h2 className="title">Card Title</h2>
@@ -26,7 +26,7 @@ function Card(props) {
     </div>
   ) : (
     <div className={`card ${position}`}>
-      <img src="../images/logo.png" alt="itemImage" />
+      <img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="itemImage" />
       <div className="card_content_container">
         <div className="card_content">
           <h2 className="title">Card Label</h2>
